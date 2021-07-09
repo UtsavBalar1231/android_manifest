@@ -7,6 +7,10 @@
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
   <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
   <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="rvc" />
+  <remote name="cunt" fetch="https://github.com/CuntsSpace" revision="rvc" />
+  <remote name="cunt-ssh" fetch="ssh://git@github.com/CuntsSpace" revision="rvc" />
+  <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
+  <remote name="hentai-ssh" fetch="ssh://git@github.com/hentaiOS" revision="Rika" />
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="rvc" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="rvc" />
 
@@ -16,11 +20,11 @@
 
   <!-- Replace existing repositories -->
   <remove-project name="platform/frameworks/base" />
-  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="cunt" groups="cunt" />
   <remove-project name="platform/frameworks/native" />
   <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
   <remove-project name="platform/build" />
-  <project name="android_build_make" path="build/make" remote="proton" groups="proton" >
+  <project name="android_build_make" path="build/make" remote="cunt" groups="cunt" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -38,11 +42,11 @@
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
   <remove-project name="platform/system/core" />
-  <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
+  <project name="android_system_core" path="system/core" remote="cunt" groups="cunt" />
   <remove-project name="platform/system/sepolicy" />
   <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
   <remove-project name="platform/bionic" />
-  <project name="android_bionic" path="bionic" remote="proton" groups="proton" />
+  <project name="android_bionic" path="bionic" remote="cunt" groups="cunt" />
   <remove-project name="platform/external/roboto-fonts" />
   <project name="android_external_roboto-fonts" path="external/roboto-fonts" remote="proton" groups="proton" />
   <remove-project name="platform/external/noto-fonts" />
@@ -51,14 +55,11 @@
   <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Dialer" />
   <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="proton" groups="proton" />
+  <remove-project name="device/generic/art" />
   <remove-project name="device/google/sunfish" />
-  <project name="android_device_google_sunfish" path="device/google/sunfish" remote="proton" groups="proton" />
   <remove-project name="device/google/redbull" />
-  <project name="android_device_google_redbull" path="device/google/redbull" remote="proton" groups="proton" />
   <remove-project name="device/google/redbull-sepolicy" />
-  <project name="android_device_google_redbull-sepolicy" path="device/google/redbull-sepolicy" remote="proton" groups="proton" />
   <remove-project name="device/google/redfin" />
-  <project name="android_device_google_redfin" path="device/google/redfin" remote="proton" groups="proton" />
   <remove-project name="platform/external/freetype" />
   <project name="android_external_freetype" path="external/freetype" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/DeskClock" />
@@ -86,7 +87,7 @@
   <remove-project name="platform/external/openssh" />
   <project name="android_external_openssh" path="external/openssh" remote="proton" groups="proton" />
   <remove-project name="platform/build/soong" />
-  <project name="android_build_soong" path="build/soong" remote="proton" groups="proton">
+  <project name="android_build_soong" path="build/soong" remote="cunt" groups="cunt">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -111,7 +112,7 @@
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="platform/art" />
-  <project name="android_art" path="art" remote="proton" groups="proton" />
+  <project name="android_art" path="art" remote="cunt" groups="cunt" />
   <remove-project name="platform/tools/metalava" />
   <project name="android_tools_metalava" path="tools/metalava" remote="proton" groups="proton" />
   <remove-project name="platform/external/wpa_supplicant_8" />
@@ -123,32 +124,21 @@
   <remove-project name="platform/hardware/ril" />
   <project name="android_hardware_ril" path="hardware/ril" remote="proton" groups="proton" />
   <remove-project name="device/google/coral" />
-  <project name="android_device_google_coral" path="device/google/coral" remote="proton" groups="proton" />
   <remove-project name="device/google/coral-sepolicy" />
-  <project name="android_device_google_coral-sepolicy" path="device/google/coral-sepolicy" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
-  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
-  <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
-  <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
-  <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
-  <project name="android_device_google_wahoo" path="device/google/wahoo" remote="proton" groups="proton" />
-  <project name="android_device_google_taimen" path="device/google/taimen" remote="proton" groups="proton" />
+  <project name="android_manifest" path="manifest" remote="cunt" groups="cunt" />
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
   <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="proton" groups="proton" />
-  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
-  <project name="android_device_google_muskie" path="device/google/muskie" remote="proton" groups="proton" />
+  <project name="android_vendor_proton" path="vendor/proton" remote="cunt" groups="cunt" />
   <project name="android_external_json-c" path="external/json-c" remote="proton" groups="proton" />
-  <project name="android_hardware_qcom_msm8998" path="hardware/qcom/msm8998" remote="proton" groups="proton" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
   <project name="android_packages_apps_ElmyraService" path="packages/apps/ElmyraService" remote="proton" groups="proton" />
-  <project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" />
-  <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="rvc" />
+  <!-- project name="android_vendor_google" path="vendor/google" remote="blobs" groups="proton" -->
   <project name="android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="proton" groups="proton" />
-  <project name="android_device_google_wahoo-kernel" path="device/google/wahoo-kernel" remote="proton" groups="proton" />
   <project name="android_external_htop" path="external/htop" remote="proton" groups="proton" />
   <project name="android_external_p7zip" path="external/p7zip" remote="proton" groups="proton" />
   <project name="android_external_bash" path="external/bash" remote="proton" groups="proton" />
@@ -160,7 +150,11 @@
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_external_zlib-ng" path="external/zlib-ng" remote="proton" groups="proton" />
-  <project name="android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
+  <project name="device_generic_art" path="device/generic/art" groups="hentai" remote="hentai" />
+  <project name="hentaiOS/platform_vendor_gms" path="vendor/gms" remote="gitlab" revision="Rika" />
+  <project name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" groups="hentai" remote="hentai" />
+  <project name="platform_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" groups="hentai" remote="hentai" />
+  <project name="platform_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" groups="hentai" remote="hentai" />
 </manifest>
